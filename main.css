@@ -75,7 +75,6 @@ font-family: Comic Sans MS, sans-serif;
 }
 
 
-
 input[type=text].field:focus {border: 2px solid #024C68;}
 
 .menu {
@@ -94,7 +93,7 @@ input[type=text].field {
 }
 .search {font-size: 1.5em;
 font-family: Comic Sans MS, sans-serif;
-margin-left:55%;
+margin-left: 21px;
 
 
 
