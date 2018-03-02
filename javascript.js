@@ -16,7 +16,7 @@ switch(name) {
     default: siti_from = "russia"; 
 
 }
-alert (siti_from);
+//alert (siti_from);
 
 
 
