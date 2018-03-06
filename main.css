@@ -1,6 +1,7 @@
 body {
   margin: 0;
 }
+/*header*/
 ul.topnav {
   list-style: none;
   margin: 0;
@@ -50,3 +51,66 @@ display: none;
       text-align: left;
     }
   }
+/*стили всплывающего окна */ /*стили всплывающего окна */ /*стили всплывающего окна */
+#snackbar{
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -250px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+#snackbar.show{
+  visibility: visible;
+  -webkit-animation:fadein 0.5s, fadeout 0.5s 2.5s;
+  animation:fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein{
+  form{bottom: 0px; opacity: 0;}
+  to{bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein{
+  form{bottom: 0px; opacity: 0;}
+  to{bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout{
+  form{bottom: 30px; opacity: 1;}
+  to{bottom: 0px; opacity: 0;}
+}
+
+@keyframes fadeout{
+  form{bottom: 30px; opacity: 1;}
+  to{bottom: 0px; opacity: 0;}
+}
+
+/*стилизация кнопки*/
+.button {
+  margin-left: 50%; /* подвинул на середину */
+  margin-top: 50px; /* и чуток вниз */
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgba(40, 67, 189, 0.363); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+} 
+.button:hover { background: rgb(0, 0, 0); } /* при наведении курсора мышки */
+.button:active { background: rgb(255, 0, 0) } /* при нажатии */
+
+/* стили для блока */
+#block {
+  width: 200px;
+  height: 100px;
+  background: rgb(228, 92, 92);
+  margin-left: 125px;
+
+}
