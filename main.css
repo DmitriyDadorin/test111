@@ -105,6 +105,8 @@ display: none;
   background: rgba(0, 0, 0, 0.6); /* фон кнопки */
   padding: .7em 1.5em; /* отступ от текста */
   outline: none; /* убирать контур в Mozilla */
+  border: none;
+ 
 } 
 .button:hover { background: rgb(0, 0, 0); } /* при наведении курсора мышки */
 .button:active { background: rgb(255, 0, 0) } /* при нажатии */
@@ -130,13 +132,15 @@ input[type="name_user"], input[type="tel"], input[type="email"], input[type="tex
   width: 300px;
   height: 50px;
   font-size: 18px;
-  margin-top: 25px;
+  margin-top: 29px;
   margin-bottom: 25px;
-  border-radius: 8px;
+  padding-left: 5px;
+ /*  border-radius: 8px; */
+ border: none;
 }
 .dws-input::before {
   font-family: "FontAwesome";
-  content: "f007";
+  content:
   position: absolute;
   font-size: 30px;
   padding: 10px 0 0 7px;
