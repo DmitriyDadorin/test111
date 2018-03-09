@@ -18,17 +18,18 @@
 </ul>
 
 <div class="search">
-<form> 
+<form id="form_text"> 
   <div class="dws-input">
-  <input type="name_user" name="username" placeholder="Введите своё имя">
-  <input type="tel" name="phone" placeholder="Введите номер телефона"> 
-  <input type="email" name="text_" placeholder="Введите почту"> 
-  <input type="text" name="text_" placeholder="Описание"><br/> 
+  <input type="name_user" name="username" placeholder="Введите своё имя" required>
+  <input type="tel" name="phone" placeholder="Введите номер телефона" required> 
+  <input type="email" name="mail" placeholder="Введите почту" required> 
+  <textarea type="text_form" name="text" cols="41" rows="5" placeholder="Дополнительная информация"></textarea>
 </div>
 </form>
 <button class="button" onclick="myFunction2()">ОТПРАВИТЬ</button>
 <div id="snackbar">Ошибка ввода данных. Проверьте регистр!</div>
 </div>
+
 
 
 

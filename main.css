@@ -106,7 +106,7 @@ display: none;
   padding: .7em 1.5em; /* отступ от текста */
   outline: none; /* убирать контур в Mozilla */
   border: none;
- 
+  margin-top: 5px;
 } 
 .button:hover { background: rgb(0, 0, 0); } /* при наведении курсора мышки */
 .button:active { background: rgb(255, 0, 0) } /* при нажатии */
@@ -122,28 +122,37 @@ display: none;
 .search {
   background-color: rgba(109, 158, 248, 0.7);
   background-size: cover;
-  margin: 75px auto 0 auto;  
+  margin-left: auto;
+  margin-top: 25px;
+  margin-right: 55px;
+ 
   text-align: center;
-  height: 485px;
-  width: 450px;
+  height: 385px;
+  width: 350px;
   
 }
-input[type="name_user"], input[type="tel"], input[type="email"], input[type="text"] {
+input[type="name_user"], input[type="tel"], input[type="email"], textarea[type="text_form"] {
   width: 300px;
-  height: 50px;
+  height: 35px;
   font-size: 18px;
-  margin-top: 29px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   padding-left: 5px;
  /*  border-radius: 8px; */
  border: none;
 }
 .dws-input::before {
-  font-family: "FontAwesome";
-  content:
-  position: absolute;
-  font-size: 30px;
+  font-family: "FontAwesome";  
+  position: absolute;  
   padding: 10px 0 0 7px;
-  color: 
+
 }
+textarea[type="text_form"]{
+  width: 300px;
+  height: 70px;
+  resize: none;
+  margin-bottom: 20px;
+
+}
+
 
