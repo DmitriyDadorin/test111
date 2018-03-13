@@ -1,4 +1,4 @@
-/*  function myFunction() {
+  function myFunction() {
     var x = document.getElementById("myTopnav");
     x.classList.toggle("responsive");
 }
@@ -10,7 +10,7 @@ function myFunction2() {
         
     }, 3000);  
 
-} */
+} 
 
 
 var slideIndex = 1;
