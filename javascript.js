@@ -42,3 +42,16 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
+document.onclick = function(dimavent) {
+   // console.log(event.target.tagName);
+    if (dimavent.target.tagName == "IMG"){
+        dimavent.target.classList.add ('bordered');
+    }      
+}
+
+
+
+
+
+
